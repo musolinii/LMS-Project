@@ -1,0 +1,32 @@
+.not-found-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--color-background);
+  padding: 1.5rem;
+}
+
+.not-found-page__content {
+  text-align: center;
+  max-width: 480px;
+}
+
+.not-found-page__emoji {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.not-found-page__content h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.not-found-page__content p {
+  margin: 0 0 2rem 0;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}

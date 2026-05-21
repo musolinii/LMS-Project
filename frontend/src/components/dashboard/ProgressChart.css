@@ -1,0 +1,38 @@
+.progress-chart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-chart__svg {
+  transform: rotate(-90deg);
+}
+
+.progress-chart__bg,
+.progress-chart__bar {
+  transition: stroke-dashoffset 0.35s;
+}
+
+.progress-chart__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-chart__value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.progress-chart__label {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}

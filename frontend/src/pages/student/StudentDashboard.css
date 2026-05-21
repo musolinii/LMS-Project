@@ -1,0 +1,55 @@
+.student-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.student-dashboard__welcome h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.student-dashboard__welcome p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.student-dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.student-dashboard__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .student-dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.student-dashboard__courses-section h3 {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.student-dashboard__courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.student-dashboard__no-courses {
+  padding: 4rem 2rem;
+  text-align: center;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-muted);
+}

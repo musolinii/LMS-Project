@@ -1,0 +1,55 @@
+/* Reuse layout structure of manage-courses-page */
+.manage-courses-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.manage-courses-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage-courses-page__header h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.manage-courses-page__list {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.manage-courses-page__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.manage-courses-page__row:last-child {
+  border-bottom: none;
+}
+
+.manage-courses-page__detail h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.manage-courses-page__detail span {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.manage-courses-page__actions {
+  display: flex;
+  gap: 0.5rem;
+}

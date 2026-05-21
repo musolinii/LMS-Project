@@ -1,0 +1,95 @@
+.navbar {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+}
+
+.navbar__title {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.025em;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar__authSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__loginLink {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar__loginLink:hover {
+  color: var(--color-primary);
+}
+
+.navbar__userSection {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navbar__dashboardLink {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar__dashboardLink:hover {
+  color: var(--color-primary);
+}
+
+.navbar__userMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar__userName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+}

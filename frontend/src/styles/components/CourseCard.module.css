@@ -1,0 +1,134 @@
+.courseCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 !important;
+}
+
+.courseCard__thumbnail {
+  position: relative;
+  height: 180px;
+  background: var(--color-surface-hover);
+  overflow: hidden;
+}
+
+.courseCard__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.courseCard__placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-border));
+}
+
+.courseCard__tag {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.courseCard__tag--beginner { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+.courseCard__tag--intermediate { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+.courseCard__tag--advanced { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+
+.courseCard__body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.courseCard__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.courseCard__description {
+  margin: 0 0 1.25rem 0;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.courseCard__instructor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+.courseCard__instructorName {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.courseCard__progressSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.courseCard__progressBar {
+  height: 6px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.courseCard__progressValue {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+.courseCard__progressText {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-align: right;
+}
+
+.courseCard__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.85rem;
+}
+
+.courseCard__price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.courseCard__link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.courseCard__link:hover {
+  text-decoration: underline;
+}
