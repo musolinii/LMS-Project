@@ -13,18 +13,17 @@
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr;
+  text-align: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hero-section__container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .hero-section__visual {
-    display: none;
+    grid-template-columns: 1.2fr 0.8fr;
+    text-align: left;
+    gap: 4rem;
   }
 }
 
@@ -53,18 +52,25 @@
 .hero-section__actions {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hero-section__actions {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
 .hero-section__visual {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-section__visual {
+    display: flex;
+  }
 }
 
 .hero-section__emoji {

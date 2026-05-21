@@ -4,9 +4,16 @@
 
 .course-filters {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .course-filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .course-filters__search {

@@ -6,6 +6,7 @@
 
 .dashboard-layout__body {
   display: flex;
+  flex-direction: column; /* Mobile first: stack sidebar and content */
   flex: 1;
 }
 
@@ -14,13 +15,29 @@
   display: flex;
   flex-direction: column;
   background: var(--color-background);
-  min-width: 0; /* Prevents flex items from overflowing */
+  min-width: 0;
 }
 
 .dashboard-layout__content {
   flex: 1;
-  padding: 2rem;
-  max-width: 1200px;
+  padding: 1rem; /* Smaller padding on mobile */
   width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .dashboard-layout__content {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-layout__body {
+    flex-direction: row; /* Desktop: side by side */
+  }
+
+  .dashboard-layout__content {
+    padding: 2rem;
+    max-width: 1200px;
+  }
 }
